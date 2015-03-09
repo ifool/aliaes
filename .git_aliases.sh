@@ -1,3 +1,4 @@
+alias g='git'
 alias gco='git checkout'
 alias ga='git add'
 alias gaa='git add .'
