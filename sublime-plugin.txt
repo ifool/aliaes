@@ -1,0 +1,9 @@
+Emmet
+BeautifyRuby
+Git
+GitGutter
+ERB Snippets
+HTMLBeautify
+JavaScript Beautify
+JavaScript Completions
+jQuery
