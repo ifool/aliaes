@@ -8,7 +8,7 @@ curl https://raw.githubusercontent.com/ifool/dev_conf/master/.tmux-ubuntu.conf >
 "oh my zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-" Ubuntu 12.04 上使用 Nginx Passenger 部署 Ruby on Rails: https://github.com/ruby-china/ruby-china/wiki/Ubuntu-12.04-%E4%B8%8A%E4%BD%BF%E7%94%A8-Nginx-Passenger-%E9%83%A8%E7%BD%B2-Ruby-on-Rails
+" Ubuntu 12.04 上使用 Nginx Passenger 部署 Ruby on Rails: https://github.com/ruby-china/ruby-china/wiki/Ubuntu-14.04-%E4%B8%8A%E4%BD%BF%E7%94%A8-Nginx-Passenger-%E9%83%A8%E7%BD%B2-Ruby-on-Rails
 
 " Development Softwares: 
 "   SublimeText 3: http://www.sublimetext.com/3
