@@ -6,6 +6,8 @@ urllib.request.build_opener( urllib.request.ProxyHandler()) );
 open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 
 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 
+Sublime Text 3 Ubuntu 输入中文: http://jingyan.baidu.com/article/f3ad7d0ff8731609c3345b3b.html
+
   Sublime Text 2 package install：
 
 import urllib2,os; pf='Package Control.sublime-package'; ipp = 
@@ -14,6 +16,8 @@ else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler(
 ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 
 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please 
 restart Sublime Text to finish installation')
+
+Sublime Text 2 Ubuntu 输入中文: http://jingyan.baidu.com/article/9225544687fe61851748f453.html
 
 my favorite sublime packages:
 
