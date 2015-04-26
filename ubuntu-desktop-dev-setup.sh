@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get install curl openssh-server mysql-server libmysqlclient-dev vim tmux nginx build-essential libgtk2.0-dev 
-
+sudo apt-get install imagemagick libmagickcore-dev
 curl https://raw.githubusercontent.com/ifool/dev_conf/master/.tmux-ubuntu.conf > ~/.tmux.conf
 
 
