@@ -30,3 +30,4 @@ HTMLBeautify
 JavaScript Beautify
 JavaScript Completions
 jQuery
+Ruby Hash Converter
