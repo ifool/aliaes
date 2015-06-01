@@ -54,3 +54,14 @@ JavaScript Beautify
 JavaScript Completions
 jQuery
 Ruby Hash Converter
+
+
+###### keymap ######
+[
+  { "keys": ["ctrl+shift+c"], "command": "copy_file_path" },
+  { "keys": ["ctrl+s"], "command": "reveal_in_side_bar" },
+  { "keys": ["ctrl+f"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+  { "keys": ["super+;"], "command": "toggle_side_bar" },
+  { "keys": ["alt+shift+f"], "command": "reindent" }
+]
+###### keymap ######
