@@ -1,0 +1,1 @@
+brew install mysql redis nginx git tig vim node imagemagick sqlite libyaml openssl readline pkg-config
