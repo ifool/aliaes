@@ -1,1 +1,4 @@
 brew install mysql redis nginx git tig vim node imagemagick sqlite libyaml openssl readline pkg-config tmux
+brew install caskroom/cask/brew-cask
+brew cask install java google-chrome
+
