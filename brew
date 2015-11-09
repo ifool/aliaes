@@ -1,4 +1,25 @@
-brew install mysql redis nginx git tig vim node imagemagick sqlite libyaml openssl readline pkg-config tmux postgresql
+brew install mysql redis postgres sqlite nginx
+brew install node imagemagick  libyaml openssl readline pkg-config
+brew install tmux git tig vim
+
+先安装Xcode
+xcode-select --install
+xcode-select -p
+
+brew tap phinze/cask
 brew install caskroom/cask/brew-cask
-brew cask install java google-chrome firefox
+
+brew cask install java go2shell iterm2 virtualbox vagrant
+brew cask install github-desktop sourcetree
+brew cask install rubymine sequel-pro sublime-text
+brew cask install google-chrome firefox vlc
+brew cask install spectacle qq android-file-transfer thunder
+
+LaunchRocket 是一个管理 brew 安装的 service 的工具，安装之后可以看所有的 service 的运行状态
+brew tap jimbojsb/launchrocket
+brew cask install launchrocket
+
+alternative brew cask packages:
+android-studio alfred webstorm mysqlworkbench aliwangwang
+sogouinput filezilla youdao dockertoolbox
 
