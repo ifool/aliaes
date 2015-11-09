@@ -54,6 +54,11 @@ JavaScript Beautify
 JavaScript Completions
 jQuery
 Ruby Hash Converter
+Material Color Scheme
+material-theme
+Ctags
+Cscope
+CodeFormatter
 
 
 ###### keymap ######
