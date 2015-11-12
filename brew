@@ -1,6 +1,6 @@
 brew install mysql redis postgres sqlite nginx
 brew install node imagemagick  libyaml openssl readline pkg-config
-brew install tmux git tig vim
+brew install tmux git tig vim subversion
 
 先安装Xcode
 xcode-select --install
