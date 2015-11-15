@@ -40,11 +40,11 @@ environment "config.i18n.default_locale = 'zh-CN'"
 environment "config.time_zone = 'Beijing'"
 
 run "curl https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/locale/zh-CN.yml > config/locales/zh-CN.yml"
-run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/config/initializers/i18n.rb > config/initializers/i18n.rb"
-run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/app/helpers/application_helper.rb > app/helpers/application_helper.rb"
-run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/.gitignore > .gitignore"
-run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/config.ru > config.ru"
-run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/config/unicorn.rb > config/unicorn.rb"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails_template/config/initializers/i18n.rb > config/initializers/i18n.rb"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails_template/app/helpers/application_helper.rb > app/helpers/application_helper.rb"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails_template/.gitignore > .gitignore"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails_template/config.ru > config.ru"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails_template/config/unicorn.rb > config/unicorn.rb"
 run "bundle exec cap install"
 run "cp config/database.yml config/database.yml.example"
 
@@ -58,13 +58,3 @@ after_bundle do
   git add: "."
   git commit: %Q{ -m 'Initial project' }
 end
-
-# Create a rails Application with template
-# database: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc
-# rails new rails_app -m template.rb -d mysql
-# rails new rails_app -m http://example.com/template.rb
-
-# apply templates to an existing Rails Application:
-# rake rails:template LOCATION=~/template.rb
-# or
-# rake rails:template LOCATION=http://example.com/template.rb
