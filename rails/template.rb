@@ -39,21 +39,21 @@ environment "config.active_record.default_timezone = :local"
 environment "config.i18n.default_locale = 'zh-CN'"
 environment "config.time_zone = 'Beijing'"
 
-# copy_file 'unicorn.rb', 'config/unicorn.rb'
-
 run "curl https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/locale/zh-CN.yml > config/locales/zh-CN.yml"
-run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/i18n.rb > config/initializers/i18n.rb"
-run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/application_helper.rb > app/helpers/application_helper.rb"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/config/initializers/i18n.rb > config/initializers/i18n.rb"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/app/helpers/application_helper.rb > app/helpers/application_helper.rb"
 run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/.gitignore > .gitignore"
 run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/config.ru > config.ru"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/config/unicorn.rb > config/unicorn.rb"
+run "bundle exec cap install"
+run "cp config/database.yml config/database.yml.example"
 
 generate :"simple_form:install", "--bootstrap"
 generate :"kaminari:config"
-generate :"kaminari:views", "bootstrap3"
+# generate :"kaminari:views", "bootstrap3"
 # usable themes for kaminari are: default bootstrap2 bootstrap3 bourbon foundation github google materialize purecss semantic_ui
 
 after_bundle do
-  # bundle exec cap install STAGES=dev,staging,production
   git :init
   git add: "."
   git commit: %Q{ -m 'Initial project' }
