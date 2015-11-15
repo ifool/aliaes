@@ -45,6 +45,7 @@ run "curl https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/lo
 run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/i18n.rb > config/initializers/i18n.rb"
 run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/application_helper.rb > app/helpers/application_helper.rb"
 run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/.gitignore > .gitignore"
+run "curl https://raw.githubusercontent.com/ifool/dev_conf/master/rails/config.ru > config.ru"
 
 generate :"simple_form:install", "--bootstrap"
 generate :"kaminari:config"
