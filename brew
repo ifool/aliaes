@@ -1,6 +1,8 @@
 brew install wget mysql redis postgres sqlite nginx
 brew install node imagemagick libyaml openssl readline pkg-config
 brew install tmux git tig vim subversion
+brew ag
+# much faster code search replacer for ack
 
 先安装Xcode
 xcode-select --install
