@@ -2,15 +2,14 @@ favorites
 
 homebrew: http://brew.sh
 rvm: http://rvm.io
-rubymine: https://www.jetbrains.com/ruby/ 
-github: https://mac.github.com/
 dash: https://kapeli.com/dash
-sequelpro: http://www.sequelpro.com/download
-qq: http://im.qq.com/macqq/index.shtml
 wechat: http://weixin.qq.com/cgi-bin/readtemplate?t=mac
-sublimetext: http://www.sublimetext.com/3
 beyondcompare: http://www.scootersoftware.com/download.php
-vlcplayer: http://www.videolan.org
-virtualbox: https://www.virtualbox.org/wiki/Downloads
-vagrant: https://www.vagrantup.com/downloads.html
 
+setup mac dev environment quickly:
+Homebrew:
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+Oh My Zsh
+  curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+tmux
+  https://raw.githubusercontent.com/ifool/dev_conf/master/.tmux.osx.conf > ~/.tmux.conf
