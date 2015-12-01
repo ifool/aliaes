@@ -1,15 +1,16 @@
-favorites
-
-homebrew: http://brew.sh
-rvm: http://rvm.io
-dash: https://kapeli.com/dash
-wechat: http://weixin.qq.com/cgi-bin/readtemplate?t=mac
-beyondcompare: http://www.scootersoftware.com/download.php
-
-setup mac dev environment quickly:
+Setup mac dev environment quickly:
 Homebrew:
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 Oh My Zsh
   curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-tmux
+configure tmux
   https://raw.githubusercontent.com/ifool/dev_conf/master/.tmux.osx.conf > ~/.tmux.conf
+install rvm
+  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+  \curl -sSL https://get.rvm.io | bash -s stable
+
+GUI apps
+dash:
+  https://kapeli.com/dash
+wechat:
+  http://weixin.qq.com/cgi-bin/readtemplate?t=mac

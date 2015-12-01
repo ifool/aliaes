@@ -18,6 +18,8 @@ brew cask install google-chrome firefox vlc
 brew cask install spectacle qq android-file-transfer thunder
 brew cask install beyond-compare
 
+brew tap homebrew/boneyard
+
 LaunchRocket 是一个管理 brew 安装的 service 的工具，安装之后可以看所有的 service 的运行状态
 brew tap jimbojsb/launchrocket
 brew cask install launchrocket

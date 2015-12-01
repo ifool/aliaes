@@ -1,0 +1,38 @@
+function scp_ikt() {
+  echo "scp -P 40022 -r $1 ikcrm_dev@test.ikcrm.com:/dyne/apps/vcooline_ikcrm_development/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@test.ikcrm.com:/dyne/apps/vcooline_ikcrm_development/current/$1
+}
+function scp_iks() {
+  echo "scp -P 40022 -r $1 ikcrm_dev@test.ikcrm.com:/dyne/apps/vcooline_ikcrm_staging/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@test.ikcrm.com:/dyne/apps/vcooline_ikcrm_staging/current/$1
+}
+function scp_ikd() {
+  echo "scp -P 40022 -r $1 ikcrm_dev@dev.ikcrm.com:/dyne/apps/vcooline_ikcrm_dev/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@dev.ikcrm.com:/dyne/apps/vcooline_ikcrm_dev/current/$1
+}
+function scp_ikp() {
+  echo "scp -P 40022 -r $1 ikcrm_dev@prod1.ikcrm.com:/dyne/apps/vcooline_ikcrm_production/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@prod1.ikcrm.com:/dyne/apps/vcooline_ikcrm_production/current/$1
+  echo "scp -P 40022 -r $1 ikcrm_dev@prod2.ikcrm.com:/dyne/apps/vcooline_ikcrm_production/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@prod2.ikcrm.com:/dyne/apps/vcooline_ikcrm_production/current/$1
+}
+
+function scp_ikt_api() {
+  echo "scp -P 40022 -r $1 ikcrm_dev@test.ikcrm.com:/dyne/apps/ikcrm_api_development/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@test.ikcrm.com:/dyne/apps/ikcrm_api_development/current/$1
+}
+function scp_iks_api() {
+  echo "scp -P 40022 -r $1 ikcrm_dev@test.ikcrm.com:/dyne/apps/ikcrm_api_staging/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@test.ikcrm.com:/dyne/apps/ikcrm_api_staging/current/$1
+}
+function scp_ikd_api() {
+  echo "scp -P 40022 -r $1 ikcrm_dev@dev.ikcrm.com:/dyne/apps/ikcrm_api_dev/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@dev.ikcrm.com:/dyne/apps/ikcrm_api_dev/current/$1
+}
+function scp_ikp_api() {
+  echo "scp -P 40022 -r $1 ikcrm_dev@prod1.ikcrm.com:/dyne/apps/ikcrm_api_production/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@prod1.ikcrm.com:/dyne/apps/ikcrm_api_production/current/$1
+  echo "scp -P 40022 -r $1 ikcrm_dev@prod2.ikcrm.com:/dyne/apps/ikcrm_api_production/current/$1"
+  scp -P 40022 -r $1 ikcrm_dev@prod2.ikcrm.com:/dyne/apps/ikcrm_api_production/current/$1
+}
+
