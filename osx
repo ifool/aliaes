@@ -14,3 +14,37 @@ dash:
   https://kapeli.com/dash
 wechat:
   http://weixin.qq.com/cgi-bin/readtemplate?t=mac
+
+
+Install brew apps:
+
+先安装Xcode
+xcode-select --install
+xcode-select -p
+
+brew install wget mysql redis postgres sqlite nginx
+brew install node imagemagick libyaml openssl readline pkg-config
+brew install tmux ag git tig vim subversion
+brew install elasticsearch
+# much faster code search replacer for ack
+
+brew tap phinze/cask
+brew install caskroom/cask/brew-cask
+
+brew cask install java go2shell iterm2 virtualbox vagrant
+brew cask install github-desktop sourcetree
+brew cask install rubymine sequel-pro sublime-text
+brew cask install google-chrome firefox vlc
+brew cask install spectacle qq android-file-transfer thunder
+brew cask install beyond-compare
+
+brew tap homebrew/boneyard
+
+LaunchRocket 是一个管理 brew 安装的 service 的工具，安装之后可以看所有的 service 的运行状态
+brew tap jimbojsb/launchrocket
+brew cask install launchrocket
+
+alternative brew cask packages:
+android-studio alfred webstorm mysqlworkbench aliwangwang
+baiduinput filezilla youdao dockertoolbox genymotion
+
