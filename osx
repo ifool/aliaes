@@ -26,7 +26,7 @@ brew install wget mysql redis postgres sqlite nginx
 brew install node imagemagick libyaml openssl readline pkg-config
 brew install tmux ag git tig vim subversion
 brew install elasticsearch
-# much faster code search replacer for ack
+brew install icdiff httpie pandoc
 
 brew tap phinze/cask
 brew install caskroom/cask/brew-cask
