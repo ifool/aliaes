@@ -8,6 +8,8 @@ configure tmux
 install rvm
   gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
   \curl -sSL https://get.rvm.io | bash -s stable
+install nvm
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 
 GUI apps
 dash:
@@ -27,6 +29,7 @@ brew install node imagemagick libyaml openssl readline pkg-config
 brew install tmux ag git tig vim subversion
 brew install elasticsearch
 brew install icdiff httpie pandoc
+brew install the_silver_searcher cloc yarn
 
 brew tap phinze/cask
 brew install caskroom/cask/brew-cask
