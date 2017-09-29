@@ -29,7 +29,7 @@ brew install node imagemagick libyaml openssl readline pkg-config
 brew install tmux ag git tig vim subversion
 brew install elasticsearch
 brew install icdiff httpie pandoc
-brew install the_silver_searcher cloc yarn
+brew install the_silver_searcher cloc yarn pssh
 
 brew tap phinze/cask
 brew install caskroom/cask/brew-cask
