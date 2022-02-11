@@ -43,7 +43,7 @@ brew cask install beyond-compare
 
 brew tap homebrew/boneyard
 
-LaunchRocket 是一个管理 brew 安装的 service 的工具，安装之后可以看所有的 service 的运行状态
+# LaunchRocket 是一个管理 brew 安装的 service 的工具，安装之后可以看所有的 service 的运行状态
 brew tap jimbojsb/launchrocket
 brew cask install launchrocket
 
@@ -51,3 +51,25 @@ alternative brew cask packages:
 android-studio alfred webstorm mysqlworkbench aliwangwang
 baiduinput filezilla youdao dockertoolbox genymotion
 
+# 安装压缩工具
+brew install percona-xtrabackup
+brew tap mhorbul/qpress
+brew install qpress
+
+# 从App Store安装的工具
+wps
+WeChat
+WeCom
+Dingtalk
+Disk Speed Test
+XCode
+Sequel Ace(Replacement of Sequel Pro)
+有道云笔记
+爱奇艺
+
+# 其它软件
+Rectangle(分屏)
+Microsoft Edge
+Visual Studio Code
+Chrome
+FireFox
